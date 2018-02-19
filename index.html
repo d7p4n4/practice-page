@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
     <link href="https://fonts.googleapis.com/css?family=Cormorant:600|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Practice page</title> 
@@ -226,6 +227,12 @@
           margin: 0;
         }
         
+        @media (max-width:576px) {
+          .video-cons-text, .brand-text {
+            font-size: .67rem;
+          }
+        }
+         
         @media (min-width: 1200px) {
           .video-cons-text, .brand-text {
             font-size: .85rem;
@@ -929,8 +936,9 @@
         margin-left: -2.5rem;
       }
       
-      .avatar-pic {
+      .avatar-pic-alone {
         border-radius: 999999999999px;
+        filter: contrast(1.4);
       }
       
       .agent-name {
@@ -960,7 +968,7 @@
             <p class="map-wrapper-text mt-3 m-0 p-0">Vix quod consequat et, et mei decore blandit verterem. Insolens explicari suscipiantur vix ad
               No aliquip facilis duo. Ad fabulas persecuti dissentias vix. Insolens explicari suscipiantur vix ad. Ut hendrerit evertitur qui, ei has mazim maiorum insolens, ei qui partiendo accommodare.</p></div>
             <div class="row justify-content-center mt-4 mb-4">
-              <div class="col-2 align-self-center"><img class="img-fluid avatar-pic" src="assets/avatar.jpg" alt=""></div>
+              <div class="col-2 align-self-center"><img class="img-fluid avatar-pic-alone" src="assets/avatar.jpg" alt=""></div>
               <div class="col-4 align-self-center">
                 <p class="agent-name pt-2">Julia Anderbacher</p>
                 <p class="agent-text">AGENT</p>
@@ -1056,8 +1064,38 @@
       }
       
       .logo {
-        font-family: Monsterrate;
+        font-family: "Great Vibes";
         font-weight: bold;
+      }
+      
+      .ten-title {
+        font-family: Monsterrate;
+        font-size: .75rem;
+        color: whitesmoke;
+        margin-bottom: 1rem;
+        font-weight: bold;        
+        letter-spacing: .3rem;
+      }
+      
+      .search-div {
+        background-color: whitesmoke;
+        height: 1.5rem;
+        padding: .3rem 1rem;
+        width: 100%;
+        border-radius: .2rem;
+        color: rgba(0,0,0,.3);
+        font-family: Monsterrate;
+        font-size: .65rem;
+        margin-bottom: 0;
+      }
+      
+      .search-btn {
+        width: 100%;
+      }
+      
+      .avatar-pic {
+        min-height: 2rem;
+        min-width: 2rem;
       }
     </style>
     
@@ -1069,9 +1107,35 @@
           <p class="logo-text">Eum alia elitr vidisse ei. Insolens explicari suscipiantur vix ad. Ut hendrerit evertitur qui, ei has mazim maiorum insolens, ei qui partiendo accommodare. Vix quod consequat et, et mei decore blandit verterem. Insolens explicari suscipiantur vix ad
               No aliquip facilis duo. Ad fabulas persecuti dissentias vix.</p>
         </div>
-        <div class="col-6 col-md-3"></div>
-        <div class="col-6 col-md-3"></div>
-        <div class="col-6 col-md-3"></div>
+        <div class="col-6 col-md-3">
+          <p class="ten-title">LAYOUT PORT</p>
+          <div class="row">
+            <div class="col-3"><img class="img-fluid avatar-pic" src="assets/avatar.jpg" alt=""></div>
+            <div class="col-9 align-self-center">
+              <p class="logo-text">Ut hendrerit evertitur qui, ei has mazim maiorum 
+              insolens, ei qui partiendo accommodare. </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><img class="img-fluid avatar-pic" src="assets/avatar.jpg" alt=""></div>
+            <div class="col-9">
+              <p class="logo-text">Eum alia elitr vidisse ei. Insolens explicari suscipiantur vix ad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mt-4 mt-md-0">
+          <p class="ten-title">SEARCHING</p>
+          <p class="logo-text">Insolens explicari suscipiantur vix ad. No aliquip facilis duo. Ad fabulas persecuti dissentias vix.</p>
+          <div class="search-div"><p class="search-div-text">Typing...</p></div>
+          <div class="first-btn search-btn mt-2"><p class="first-btn-text">Nem Látom</p></div>
+        </div>
+        <div class="col-6 col-md-3 mt-4 mt-md-0">
+          <p class="ten-title">CONTACT INFO</p>
+          <p class="logo-text"><i class="fas fa-map-marker mr-2"></i> 3000, Hatvan Apafi u.7. HU</p>
+          <p class="logo-text"><i class="fas fa-phone mr-2"></i> +3670/327 1380</p>
+          <p class="logo-text"><i class="fas fa-envelope mr-2"></i> info@example.com</p>
+          <p class="logo-text"><i class="fas fa-pencil-alt mr-2"></i> Nem tudom, mi kéne ide</p>
+        </div>
       </div>
     
     </div>
